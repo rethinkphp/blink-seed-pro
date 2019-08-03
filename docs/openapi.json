@@ -1,0 +1,19 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "Blink Framework Seed App",
+    "description": "The APIs for Blink Framework Seed App",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http:\/\/rethinkphp.com",
+      "description": "Development Server"
+    },
+    {
+      "url": "http:\/\/rethinkphp.com",
+      "description": "Production Server"
+    }
+  ],
+  "paths": {}
+}

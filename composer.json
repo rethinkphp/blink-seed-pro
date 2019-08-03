@@ -1,0 +1,34 @@
+{
+    "name" : "blink/seed-pro",
+    "description": "A seed application for Blink Framework",
+    "authors" : [
+        {
+            "name" : "Jin Hu",
+            "email": "bixuehujin@gmail.com"
+        }
+    ],
+    "require": {
+        "blink/blink": "0.4.*",
+        "blink/restapi": "dev-master",
+        "symfony/var-exporter": "^4.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "src",
+            "app\\tests\\": "tests"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"mkdir('runtime/sessions');\""
+        ]
+    }
+}
