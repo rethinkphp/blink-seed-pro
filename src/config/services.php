@@ -6,7 +6,9 @@ return [
     ],
     'response' => [
         'class' => \blink\http\Response::class,
-        'middleware' => [],
+        'middleware' => [
+            \app\http\middleware\ResponseFormatter::class,
+        ],
     ],
     'session' => [
         'class' => 'blink\session\Manager',
